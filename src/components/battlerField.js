@@ -1,4 +1,7 @@
 import { Physics, Input } from 'phaser';
+import Player from '../classes/player';
+import Explosion from './explosion';
+import Beam from './beam';
 
 import { ASSETS_CONSTANTS, GAME_CONFIG } from '../helpers/constants';
 
