@@ -1,16 +1,20 @@
 /* eslint-disable class-methods-use-this */
 import { Scene, Input, Math } from 'phaser';
+import Asteroid from '../components/asteroid';
+import BattleField from '../components/battleField';
+import General from '../helpers/general';
+import { ASSETS_CONSTANTS, SCENE_CONSTANTS, GAME_CONFIG } from '../helpers/constants';
 
 export default class GameScene extends Scene {
   displayScoreBoard() {
-    const { score } = this.battlecruiser.player;
+    const { score } = this.battlefield.player;
     const scoreFormated = General.zeroPad(score, 6);
 
     this.scoreLabel.text = `SCORE ${scoreFormated}`;
   }
 
   addBattleCruiser() {
-    this.battlecruiser = new BattleCruiser(this,
+    this.BattleField = new BattleField(this,
       this.playerName,
       GAME_CONFIG.width / 2,
       GAME_CONFIG.height - 40);
@@ -48,17 +52,17 @@ export default class GameScene extends Scene {
   addEvents() {
     this.physics.world.setBoundsCollision();
 
-    this.physics.add.overlap(this.battlecruiser,
+    this.physics.add.overlap(this.battleField,
       this.asteroids,
-      this.battlecruiser.hurt,
+      this.battlefield.hurt,
       null,
-      this.battlecruiser);
+      this.battlefield);
 
     this.physics.add.overlap(this.projectiles,
       this.asteroids,
-      this.battlecruiser.hitEnemy,
+      this.battlefield.hitEnemy,
       null,
-      this.battlecruiser);
+      this.battlefield);
   }
 
   init(data) {
@@ -93,7 +97,7 @@ export default class GameScene extends Scene {
   }
 
   update() {
-    if (this.battlecruiser.player.lives <= 0) {
+    if (this.battlefield.player.lives <= 0) {
       this.scene.start(SCENE_CONSTANTS.GAME_OVER,
         {
           playerName: this.playerName,
@@ -107,8 +111,8 @@ export default class GameScene extends Scene {
       this[`${ASSETS_CONSTANTS.ASTEROID}${type}`].move();
     });
 
-    this.battlecruiser.move(this.cursorKeys);
-    this.battlecruiser.shoot(this.spacebar);
+    this.battlefield.move(this.cursorKeys);
+    this.battlefield.shoot(this.spacebar);
 
     this.displayScoreBoard();
 

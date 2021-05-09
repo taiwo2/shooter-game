@@ -1,4 +1,6 @@
 import { Scene, Display } from 'phaser';
+import { ASSETS_CONSTANTS, SCENE_CONSTANTS, GAME_CONFIG } from '../helper/constants';
+import General from '../helpers/general';
 
 export default class TitleScene extends Scene {
   addMenu() {

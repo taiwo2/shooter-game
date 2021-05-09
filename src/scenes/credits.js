@@ -1,4 +1,6 @@
 import { Scene, Display } from 'phaser';
+import General from '../helper/general';
+import { ASSETS_CONSTANTS, SCENE_CONSTANTS, GAME_CONFIG } from '../helper/constants';
 
 export default class CreditsScene extends Scene {
   addMovement() {

@@ -1,7 +1,9 @@
 import { Scene, Display } from 'phaser';
+import Leaderboard from '../classes/leaderboard';
+import General from '../helper/general';
+import { ASSETS_CONSTANTS, SCENE_CONSTANTS, GAME_CONFIG } from '../helper/constants';
 
-
-export default class Top10Scene extends Scene {
+export default class TopTenScene extends Scene {
   printLeaderboard(top10) {
     let strTop10 = '';
     top10.forEach((item, index) => {

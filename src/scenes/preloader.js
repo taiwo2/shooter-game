@@ -1,4 +1,5 @@
 import { Scene } from 'phaser';
+import { SCENE_CONSTANTS, ASSETS_CONSTANTS } from '../helper/constants';
 
 export default class PreloaderScene extends Scene {
   loadAssets() {

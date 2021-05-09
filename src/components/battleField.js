@@ -3,7 +3,7 @@ import Player from '../classes/player';
 import Explosion from './explosion';
 import Beam from './beam';
 
-import { ASSETS_CONSTANTS, GAME_CONFIG } from '../helpers/constants';
+import { ASSETS_CONSTANTS, GAME_CONFIG } from '../helper/constants';
 
 export default class BattleField extends Physics.Arcade.Sprite {
   constructor(currentScene, playerName, positionX, positionY) {
