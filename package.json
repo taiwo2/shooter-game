@@ -1,0 +1,33 @@
+{
+  "name": "shooter-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git+https://github.com/taiwo2/shooter-game.git",
+  "author": "taiwo2 <adetonat@ymail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taiwo2/shooter-game/issues"
+  },
+  "homepage": "https://github.com/taiwo2/shooter-game#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack serve --mode development --env development"
+  },
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "babel-core": "^7.0.0-beta.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "phaser": "^3.0.0"
+  }
+}
