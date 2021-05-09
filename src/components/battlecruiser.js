@@ -5,7 +5,7 @@ import Beam from './beam';
 
 import { ASSETS_CONSTANTS, GAME_CONFIG } from '../helper/constants';
 
-export default class BattleField extends Physics.Arcade.Sprite {
+export default class BattleCruiser extends Physics.Arcade.Sprite {
   constructor(currentScene, playerName, positionX, positionY) {
     super(currentScene, positionX, positionY, ASSETS_CONSTANTS.BATTLE_CRUISER);
 

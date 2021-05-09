@@ -1,20 +1,20 @@
 /* eslint-disable class-methods-use-this */
 import { Scene, Input, Math } from 'phaser';
 import Asteroid from '../components/asteroid';
-import BattleField from '../components/battleField';
-import General from '../helpers/general';
-import { ASSETS_CONSTANTS, SCENE_CONSTANTS, GAME_CONFIG } from '../helpers/constants';
+import BattleCruiser from '../components/battlecruiser';
+import General from '../helper/general';
+import { ASSETS_CONSTANTS, SCENE_CONSTANTS, GAME_CONFIG } from '../helper/constants';
 
 export default class GameScene extends Scene {
   displayScoreBoard() {
-    const { score } = this.battlefield.player;
+    const { score } = this.battlecruiser.player;
     const scoreFormated = General.zeroPad(score, 6);
 
     this.scoreLabel.text = `SCORE ${scoreFormated}`;
   }
 
   addBattleCruiser() {
-    this.BattleField = new BattleField(this,
+    this.battlecruiser = new BattleCruiser(this,
       this.playerName,
       GAME_CONFIG.width / 2,
       GAME_CONFIG.height - 40);
@@ -52,17 +52,17 @@ export default class GameScene extends Scene {
   addEvents() {
     this.physics.world.setBoundsCollision();
 
-    this.physics.add.overlap(this.battleField,
+    this.physics.add.overlap(this.battlecruiser,
       this.asteroids,
-      this.battlefield.hurt,
+      this.battlecruiser.hurt,
       null,
-      this.battlefield);
+      this.battlecruiser);
 
     this.physics.add.overlap(this.projectiles,
       this.asteroids,
-      this.battlefield.hitEnemy,
+      this.battlecruiser.hitEnemy,
       null,
-      this.battlefield);
+      this.battlecruiser);
   }
 
   init(data) {
@@ -97,7 +97,7 @@ export default class GameScene extends Scene {
   }
 
   update() {
-    if (this.battlefield.player.lives <= 0) {
+    if (this.battlecruiser.player.lives <= 0) {
       this.scene.start(SCENE_CONSTANTS.GAME_OVER,
         {
           playerName: this.playerName,
@@ -111,8 +111,8 @@ export default class GameScene extends Scene {
       this[`${ASSETS_CONSTANTS.ASTEROID}${type}`].move();
     });
 
-    this.battlefield.move(this.cursorKeys);
-    this.battlefield.shoot(this.spacebar);
+    this.battlecruiser.move(this.cursorKeys);
+    this.battlecruiser.shoot(this.spacebar);
 
     this.displayScoreBoard();
 

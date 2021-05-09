@@ -47,7 +47,7 @@ export default class CreditsScene extends Scene {
     this.madeByText = this.add.text(
       0,
       0,
-      'CREATED BY:\nSergio Zambrano\n\n\n\nASSETS FROM:\nStarcraft - Blizzard Entertainment',
+      'CREATED BY:\nTaiwo Adetona\n\n\n\nASSETS FROM:\nStarcraft - Blizzard Entertainment',
       {
         fontSize: '26px',
         fill: '#0f0',
