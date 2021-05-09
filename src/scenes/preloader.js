@@ -3,7 +3,7 @@ import { SCENE_CONSTANTS, ASSETS_CONSTANTS } from '../helper/constants';
 
 export default class PreloaderScene extends Scene {
   loadAssets() {
-    this.load.spritesheet(ASSETS_CONSTANTS.LOGO, 'assets/logo.png', {
+    this.load.spritesheet(ASSETS_CONSTANTS.LOGO, 'assets/logode.png', {
       frameWidth: 400,
       frameHeight: 300,
     });
