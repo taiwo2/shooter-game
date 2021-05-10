@@ -2,8 +2,8 @@
 import { Scene, Input, Math } from 'phaser';
 import Asteroid from '../components/asteroid';
 import BattleCruiser from '../components/battlecruiser';
-import General from '../helper/general';
-import { ASSETS_CONSTANTS, SCENE_CONSTANTS, GAME_CONFIG } from '../helper/constants';
+import General from '../helpers/general';
+import { ASSETS_CONSTANTS, SCENE_CONSTANTS, GAME_CONFIG } from '../helpers/constants';
 
 export default class GameScene extends Scene {
   displayScoreBoard() {

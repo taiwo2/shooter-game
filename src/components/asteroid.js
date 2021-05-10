@@ -1,5 +1,5 @@
 import { Physics, Math } from 'phaser';
-import { ASSETS_CONSTANTS, GAME_CONFIG } from '../helper/constants';
+import { ASSETS_CONSTANTS, GAME_CONFIG } from '../helpers/constants';
 
 export default class Asteroid extends Physics.Arcade.Sprite {
   constructor(type, speedMovement, currentScene, positionX, positionY) {

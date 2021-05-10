@@ -1,11 +1,8 @@
-/* eslint-disable class-methods-use-this */
-
 import { Physics, Input } from 'phaser';
 import Player from '../classes/player';
 import Explosion from './explosion';
 import Beam from './beam';
-
-import { ASSETS_CONSTANTS, GAME_CONFIG } from '../helper/constants';
+import { ASSETS_CONSTANTS, GAME_CONFIG } from '../helpers/constants';
 
 export default class BattleCruiser extends Physics.Arcade.Sprite {
   constructor(currentScene, playerName, positionX, positionY) {

@@ -1,8 +1,6 @@
-/* eslint-disable class-methods-use-this */
-
 import { Scene, Display } from 'phaser';
-import General from '../helper/general';
-import { ASSETS_CONSTANTS, SCENE_CONSTANTS, GAME_CONFIG } from '../helper/constants';
+import General from '../helpers/general';
+import { ASSETS_CONSTANTS, SCENE_CONSTANTS, GAME_CONFIG } from '../helpers/constants';
 
 export default class CreditsScene extends Scene {
   addMovement() {
@@ -49,7 +47,7 @@ export default class CreditsScene extends Scene {
     this.madeByText = this.add.text(
       0,
       0,
-      'CREATED BY:\nTaiwo Adetona\n\n\n\nASSETS FROM:\nStarcraft - Blizzard Entertainment',
+      'CREATED BY:\nSergio Zambrano\n\n\n\nASSETS FROM:\nStarcraft - Blizzard Entertainment',
       {
         fontSize: '26px',
         fill: '#0f0',

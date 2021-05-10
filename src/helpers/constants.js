@@ -41,4 +41,5 @@ const ASSETS_CONSTANTS = {
   EXPLOSION_SOUND: 'exposionAudio',
   PIXEL_FONT: 'pixelFont',
 };
+
 export { SCENE_CONSTANTS, ASSETS_CONSTANTS, GAME_CONFIG };

@@ -1,7 +1,5 @@
-/* eslint-disable class-methods-use-this */
-
 import { GameObjects } from 'phaser';
-import { ASSETS_CONSTANTS } from '../helper/constants';
+import { ASSETS_CONSTANTS } from '../helpers/constants';
 
 export default class Beam extends GameObjects.Sprite {
   constructor(currentScene) {
