@@ -11,8 +11,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        test: /\.m?js$/,
+        exclude: /(node_modules)/,
         include: path.resolve(__dirname, 'src/'),
         use: {
           loader: 'babel-loader',
