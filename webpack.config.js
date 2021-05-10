@@ -8,7 +8,6 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'app.bundle.js',
   },
-  module: {
     rules: [
       {
         test: /\.css$/i,
@@ -19,7 +18,6 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
-  },
   module: {
     rules: [
       {
