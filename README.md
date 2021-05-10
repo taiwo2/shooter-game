@@ -38,7 +38,7 @@ The most important goal is getting the highest score. Your name will be put in t
 
 ## Live Demo
 
-Check out the live demo [here](https://phaser-spacecraft.netlify.app/)
+Check out the live demo [here](https://deadspace.netlify.app/)
 
 
 ## Getting started
@@ -66,13 +66,6 @@ Check out the live demo [here](https://phaser-spacecraft.netlify.app/)
 - Run `npm run server` in your terminal.
 - Open **http://localhost:8080** in your browser.
 - Enjoy :)
-
-
-## Potential Features
-- Full screen mode.
-- Power ups when shooting to special asteroids.
-- More audios for specifics scenes (Title, Game Start, Game Over, Top 10).
-- Possibility for choosing among different battlecruisers.
 
 
 ## Authors
