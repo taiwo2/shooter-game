@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this */
+
 import { Scene, Display } from 'phaser';
 import Leaderboard from '../classes/leaderboard';
 import General from '../helper/general';
