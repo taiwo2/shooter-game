@@ -29,9 +29,9 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: { presets: ['@babel/preset-env'], }
-        }
-      }
-    ]
+        },
+      },
+    ],
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'build'),
@@ -41,13 +41,13 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-        from: path.resolve(__dirname, 'src/index.html'),
-        to: path.resolve(__dirname, 'build'),
+          from: path.resolve(__dirname, 'src/index.html'),
+          to: path.resolve(__dirname, 'build'),
         },
         {
-        from: path.resolve(__dirname, 'src/assets'),
-        to: path.resolve(__dirname, 'build/assets'),
-        }
+          from: path.resolve(__dirname, 'src/assets'),
+          to: path.resolve(__dirname, 'build/assets'),
+        },
       ],
     }),
     new webpack.DefinePlugin({
