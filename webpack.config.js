@@ -8,16 +8,6 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'app.bundle.js',
   },
-  rules: [
-    {
-      test: /\.css$/i,
-      use: ['style-loader', 'css-loader'],
-    },
-    {
-      test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      type: 'asset/resource',
-    },
-  ],
   module: {
     rules: [
       {
@@ -28,6 +18,14 @@ module.exports = {
           loader: 'babel-loader',
           options: { presets: ['@babel/preset-env'] },
         },
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
