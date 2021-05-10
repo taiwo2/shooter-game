@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this */
+
 import { Physics, Input } from 'phaser';
 import Player from '../classes/player';
 import Explosion from './explosion';

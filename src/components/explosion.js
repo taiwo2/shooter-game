@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this */
+
 import { GameObjects } from 'phaser';
 import { ASSETS_CONSTANTS } from '../helper/constants';
 
