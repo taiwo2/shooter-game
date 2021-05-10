@@ -2,49 +2,45 @@
   "name": "shooter-game",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git+https://github.com/taiwo2/shooter-game.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taiwo2/shooter-game.git"
+  },
   "author": "taiwo2 <adetonat@ymail.com>",
   "license": "MIT",
+  "description": "> It is a simple shooting videogame, created as a capstone project using JavaScript, for Microverse. Only for learning purposes.",
   "bugs": {
     "url": "https://github.com/taiwo2/shooter-game/issues"
   },
   "homepage": "https://github.com/taiwo2/shooter-game#readme",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "jest",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open",
-    "watch-jest": "jest --watchAll --passWithNoTests",
+    "build": "webpack",
+    "dev": "webpack --mode development",
     "pro": "webpack -p",
     "watch": "webpack --w --mode development",
-    "dev": "webpack serve --mode development --env development"
+    "start": "webpack-dev-server --open",
+    "test": "jest"
   },
-  "description": "",
   "devDependencies": {
-    "@babel/cli": "^7.13.16",
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.1",
-    "babel-core": "^7.0.0-beta.3",
-    "babel-eslint": "^8.2.6",
-    "babel-loader": "^8.2.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "copy-webpack-plugin": "^8.1.1",
-    "eslint": "^6.8.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-import": "^2.22.1",
-    "jest": "^26.6.3",
+    "regenerator-runtime": "^0.13.7",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "@heroku/buildpack-registry": "^1.0.1",
-    "async-file": "^2.0.2",
     "babel-polyfill": "^6.26.0",
-    "cli-ux": "^5.5.1",
-    "got": "^11.8.2",
     "node-fetch": "^2.6.1",
-    "phaser": "^3.0.0",
-    "phoenix": "^1.5.8"
+    "phaser": "^3.0.0"
   }
 }
