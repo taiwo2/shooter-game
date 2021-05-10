@@ -1,5 +1,5 @@
 /* eslint-disable */
 
-import ShooterGame from './src/shootergame';
+import ShooterGame from './shootergame';
 
 window.game = new ShooterGame();
