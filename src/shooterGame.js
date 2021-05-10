@@ -1,4 +1,3 @@
-/* eslint-disable */
 
 import { Game } from 'phaser';
 import { SCENE_CONSTANTS, GAME_CONFIG } from './helper/constants';
