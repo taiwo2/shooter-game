@@ -2,12 +2,11 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
-
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
   },
   module: {
     rules: [
@@ -21,7 +20,6 @@ module.exports = {
       },
     ],
   },
-
   module: {
     rules: [
       {

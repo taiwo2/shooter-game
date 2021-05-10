@@ -1,5 +1,5 @@
 import { GameObjects } from 'phaser';
-import { ASSETS_CONSTANTS } from '../helpers/constants';
+import { ASSETS_CONSTANTS } from '../helper/constants';
 
 export default class TopTen extends GameObjects.Sprite {
   constructor(currentScene, positionX, positionY) {
