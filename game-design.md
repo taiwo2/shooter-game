@@ -1,4 +1,4 @@
-![Galaxy Wars](./wars.jpg)
+![Galaxy Wars](./dead.png)
 
 **🎮️ Name of the game: Shooter Game!\
 👥 Stakeholders:**
