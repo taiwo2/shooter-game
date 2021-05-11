@@ -21,7 +21,7 @@
     "dev": "webpack --mode development",
     "pro": "webpack -p",
     "watch": "webpack --w --mode development",
-    "start": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server --hot",
     "test": "jest",
     "watch-jest": "jest --watchAll --passWithNoTests"
   },

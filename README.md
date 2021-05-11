@@ -49,6 +49,9 @@ Check out the live demo [here](https://deadspace.netlify.app/)
 - Install Node JS. ([NodeJS Documentation](https://nodejs.org/en/docs/)) 
 - Install Webpack. ([Webpack Documentation](https://webpack.js.org/guides/installation/)) 
 
+## Game Design Document
+
+- [Game Design Document](./game-design.md)
 
 ### Install
 
@@ -99,4 +102,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+MIT License
