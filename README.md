@@ -8,7 +8,7 @@
 ### How to play with?
 You are the pilot of a battlecruiser (maybe one among dozens), and your task is destroy all the asteroids that you can for saving the Earth. In order to comply with this important duty, you can drive the battlecruiser using arrow keys (🡱🡳🡰🡲) and shoot a Yamato Beam using **spacebar**.
 
-To start, you shoould type your name (at most 11 characters). If you left a blank input, you will be registered as `UNNAMED`.
+To start, you should  click **Backspace**(🡰) key on keyboard to type in your name (at most 11 characters). If you left a blank input, you will be registered as `UNNAMED`.
 
 When you click on **Play**, the battlecruiser will start in the bottom of the screen, and the asteroids will fall from the top with differents velocities.
 
@@ -66,7 +66,7 @@ Check out the live demo [here](https://deadspace.netlify.app/)
 
 
 ### Usage
-- Run `npm run server` in your terminal.
+- Run `npm run dev` in your terminal.
 - Open **http://localhost:8080** in your browser.
 - Enjoy :)
 

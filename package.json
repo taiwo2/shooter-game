@@ -18,10 +18,8 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --mode development",
-    "pro": "webpack -p",
-    "watch": "webpack --w --mode development",
-    "start": "webpack-dev-server --hot",
+    "start": "webpack-dev-server --mode development --open",
+    "dev": "webpack serve --mode development --env development",
     "test": "jest",
     "watch-jest": "jest --watchAll --passWithNoTests"
   },
